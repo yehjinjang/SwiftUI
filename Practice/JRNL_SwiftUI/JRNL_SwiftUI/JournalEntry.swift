@@ -13,12 +13,14 @@ struct JournalEntry: Identifiable , Hashable {
     var date: Date
     var entryTitle: String
     var entryBody: String
+    var rating : Int
     var photo: UIImage?
     var latitude: Double?
     var longitude: Double?
 }
 
+
 let testData = [
-    JournalEntry(date: Date(), entryTitle: "Sample Entry 1", entryBody: "This is a sample entry body.", photo: nil, latitude: 37.7749, longitude: -122.4194),
-    JournalEntry(date: Date(), entryTitle: "Sample Entry 2", entryBody: "This is another sample entry body.", photo: nil, latitude: 34.0522, longitude: -118.2437)
+    JournalEntry(date: Date(), entryTitle: "Sample Entry 1", entryBody: "This is a sample entry body.", rating: 4, photo: UIImage(systemName: "face.smiling"), latitude: 37.7749, longitude: -122.4194),
+    JournalEntry(date: Date(), entryTitle: "Sample Entry 2", entryBody: "This is another sample entry body.", rating: 5, photo: UIImage(systemName: "face.smiling"), latitude: 34.0522, longitude: -118.2437)
 ]

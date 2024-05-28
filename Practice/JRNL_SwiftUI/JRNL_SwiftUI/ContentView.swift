@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    var journalEntries: [JournalEntry] = testData
     var body: some View {
-        NavigationStack {
-            List(journalEntries) { journalEntry in
-                JournalCell(journalEntry: journalEntry)
-            }
-            .navigationTitle("Journal List")
-            .navigationDestination(for: JournalEntry.self) { journalEntry in
-                JournalEntryDetail(selectedJournalEntry: journalEntry)
-            }
+        TabView {
+            JournalListView()
+                .tabItem {
+                    Label("List", systemImage: "list.bullet")
+                }
+            
+            MapView()
+                .tabItem {
+                    Label("Map", systemImage: "map")
+                }
         }
     }
 }

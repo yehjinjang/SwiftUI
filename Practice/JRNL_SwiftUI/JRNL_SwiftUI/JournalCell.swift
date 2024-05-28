@@ -10,22 +10,31 @@ import UIKit
 
 struct JournalCell: View {
     var journalEntry: JournalEntry
+    
     var body: some View {
-        NavigationLink(value: journalEntry) {
-            HStack {
-                Image(uiImage: journalEntry.photo ?? UIImage(systemName: "face.smiling")!)
-                    .resizable()
-                    .frame(width: 90, height: 90)
-                VStack(alignment: .leading) {
-                    Text(journalEntry.date, style: .date)
-                        .font(.title)
-                        .fontWeight(.bold)
-                    Text(journalEntry.entryTitle)
-                        .font(.title2)
-                        .foregroundStyle(.secondary)
+        HStack {
+            Image(uiImage: journalEntry.photo ?? UIImage(systemName: "face.smiling")!)
+                .resizable()
+                .frame(width: 90, height: 90)
+            VStack(alignment: .leading) {
+                Text(journalEntry.date, style: .date)
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text(journalEntry.entryTitle)
+                    .font(.title2)
+                    .foregroundStyle(.secondary)
+                HStack {
+                    ForEach(0..<journalEntry.rating, id: \.self) { _ in
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.yellow)
+                    }
+                    ForEach(journalEntry.rating..<5, id: \.self) { _ in
+                        Image(systemName: "star")
+                            .foregroundColor(.yellow)
+                    }
                 }
-                .padding()
             }
+            .padding()
         }
     }
 }

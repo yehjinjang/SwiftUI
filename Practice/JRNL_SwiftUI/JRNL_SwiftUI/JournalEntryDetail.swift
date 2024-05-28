@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
 
 struct JournalEntryDetail: View {
     var selectedJournalEntry: JournalEntry
@@ -23,6 +22,16 @@ struct JournalEntryDetail: View {
                     .fontWeight(.bold)
                 Text(selectedJournalEntry.entryBody)
                     .font(.title2)
+                HStack {
+                    ForEach(0..<selectedJournalEntry.rating, id: \.self) { _ in
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.yellow)
+                    }
+                    ForEach(selectedJournalEntry.rating..<5, id: \.self) { _ in
+                        Image(systemName: "star")
+                            .foregroundColor(.yellow)
+                    }
+                }
                 Image(uiImage: selectedJournalEntry.photo ?? UIImage(systemName: "face.smiling")!)
                     .resizable()
                     .frame(width: 300, height: 300)
