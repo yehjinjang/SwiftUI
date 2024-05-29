@@ -9,39 +9,30 @@ import SwiftUI
 import SwiftData
 
 struct JournalListView: View {
-    @State private var isShowwAddJournal =  false
-    @Query(sort:\JournalEntry.date) var journalEntries : [ JournalEntry]
+    @State private var isShowAddJournalView = false
+    @Query(sort:\JournalEntry.date) var journalEntries: [JournalEntry]
     
-    var body : some View {
+    var body: some View {
         NavigationStack {
             List(journalEntries) { journalEntry in
-                Text(journalEntry.entryTitle)
-        
-                
-                
-            }
+                JournalCell(journalEntry: journalEntry)            }
             .navigationTitle("Journal List")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing){
-                    Button( "Add", systemImage: "plus"){
-                        print("add")
-                        
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Add", systemImage: "plus") {
+                        isShowAddJournalView = true
                     }
                 }
-                
             }
-            .sheet(isPresented: $isShowwAddJournal) {
+            .sheet(isPresented: $isShowAddJournalView) {
                 AddJournalEntryView()
-                
             }
-                   }
+        }
     }
 }
-
 
 #Preview {
     JournalListView()
         .modelContainer(for: JournalEntry.self, inMemory: true)
-
 }
