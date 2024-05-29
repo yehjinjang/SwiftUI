@@ -29,15 +29,15 @@ class JournalEntry {
         self.latitude = latitude
         self.longitude = longitude
     }
+    
     @Transient
-    var photo : UIImage? {
+    var photo: UIImage? {
         if let data = photoData {
             return UIImage(data: data)
         }
         return nil
     }
 }
-
 //struct JournalEntry: Identifiable , Hashable {
 //    var id = UUID()
 //    var date: Date

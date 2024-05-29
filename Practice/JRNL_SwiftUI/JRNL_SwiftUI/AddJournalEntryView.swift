@@ -5,7 +5,6 @@
 //  Created by 장예진 on 5/28/24.
 //
 
-
 import SwiftUI
 import CoreLocation
 
@@ -107,7 +106,6 @@ struct AddJournalEntryView: View {
 #Preview {
     AddJournalEntryView()
 }
-
 //struct AddJournalEntryView: View {
 //    @Environment(\.presentationMode) var presentationMode
 //    @Binding var journalEntries: [JournalEntry]

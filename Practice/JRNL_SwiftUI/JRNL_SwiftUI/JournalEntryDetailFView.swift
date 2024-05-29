@@ -17,6 +17,9 @@ struct JournalEntryDetailView: View {
         ScrollView {
             VStack {
                 Spacer().frame(height: 30)
+                RatingView(rating: .constant(journalEntry.rating))
+                    .frame(maxWidth: .infinity, alignment: .center)
+                Spacer().frame(height: 30)
                 Text(journalEntry.date.formatted(.dateTime.year().month().day()))
                     .font(.title)
                     .fontWeight(.bold)

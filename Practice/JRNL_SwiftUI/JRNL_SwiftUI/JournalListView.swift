@@ -9,12 +9,21 @@ import SwiftUI
 import SwiftData
 
 struct JournalListView: View {
+    @State private var searchText = ""
     @State private var isShowAddJournalView = false
     @Query(sort:\JournalEntry.date) var journalEntries: [JournalEntry]
     
+    var filteredJournalEntries: [JournalEntry] {
+        if searchText.isEmpty {
+            return journalEntries
+        } else {
+            return journalEntries.filter { $0.entryTitle.lowercased().contains(searchText.lowercased()) }
+        }
+    }
+    
     var body: some View {
         NavigationStack {
-            List(journalEntries) { journalEntry in
+            List(filteredJournalEntries) { journalEntry in
                 NavigationLink(value: journalEntry) {
                     JournalCell(journalEntry: journalEntry)
                 }
@@ -35,6 +44,7 @@ struct JournalListView: View {
             .sheet(isPresented: $isShowAddJournalView) {
                 AddJournalEntryView()
             }
+            .searchable(text: $searchText, placement: .navigationBarDrawer)
         }
     }
 }

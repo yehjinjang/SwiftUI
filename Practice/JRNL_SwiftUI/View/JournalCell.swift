@@ -6,33 +6,33 @@
 //
 
 
-
 import SwiftUI
-struct JournalCell : View {
-    var journalEntry : JournalEntry
+
+struct JournalCell: View {
+    var journalEntry: JournalEntry
     
     var body: some View {
-        HStack {
-            Image(uiImage: journalEntry.photo ?? UIImage(systemName: "face.smiling")!)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 90, height: 90)
-                .clipped()
-            VStack {
-                Text(journalEntry.date.formatted(.dateTime.year().month().day()))
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                Text(journalEntry.entryTitle)
-                    .font(.title2)
-                    .foregroundStyle(.secondary)                    
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
+        VStack {
+            HStack {
+                Image(uiImage: journalEntry.photo ?? UIImage(systemName: "face.smiling")!)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 90, height: 90)
+                    .clipped()
+                VStack {
+                    Text(journalEntry.date.formatted(.dateTime.year().month().day()))
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    Text(journalEntry.entryTitle)
+                        .font(.title2)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
             }
         }
     }
 }
-
 
 //import SwiftUI
 //import UIKit

@@ -77,9 +77,9 @@
 				B894F9622C05AAF900EE4604 /* JRNL_SwiftUIApp.swift */,
 				B894F9642C05AAF900EE4604 /* ContentView.swift */,
 				B894F97E2C05C8DB00EE4604 /* JournalListView.swift */,
+				B894F9762C05AD6000EE4604 /* JournalEntryDetailFView.swift */,
 				B894F97A2C05BD0600EE4604 /* AddJournalEntryView.swift */,
 				B894F9742C05AD4300EE4604 /* MapView.swift */,
-				B894F9762C05AD6000EE4604 /* JournalEntryDetailFView.swift */,
 				B894F9662C05AAFB00EE4604 /* Assets.xcassets */,
 				B894F9682C05AAFB00EE4604 /* Preview Content */,
 			);

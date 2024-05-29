@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
         TabView {
             JournalListView()
@@ -21,7 +20,6 @@ struct ContentView: View {
                     Label("Map", systemImage: "map")
                 }
         }
-        
     }
 }
 
