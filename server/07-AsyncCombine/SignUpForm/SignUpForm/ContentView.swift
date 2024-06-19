@@ -54,6 +54,7 @@ class SignUpFormViewModel: ObservableObject {
         authenticationService.checkUserNameAvailableWithClosure(userName: userName) {
             [weak self] result in
             DispatchQueue.main.async {
+                print(result)
                 switch result {
                 case .success(let isAvailable):
                     self?.isUserNameAvailable = isAvailable
