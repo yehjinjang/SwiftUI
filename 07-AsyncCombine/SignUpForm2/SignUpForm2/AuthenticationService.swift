@@ -1,8 +1,8 @@
 //
-//  AuthenticationSerivce.swift
+//  AuthenticationService.swift
 //  SignUpForm2
 //
-//  Created by 장예진 on 6/20/24.
+//  Created by Jungman Bae on 6/20/24.
 //
 
 import Foundation
@@ -42,11 +42,29 @@ struct AuthenticationService {
                 return (data, response)
             }
         return dataTaskPublisher
+            .tryCatch { error -> AnyPublisher<(data: Data, response: URLResponse), Error> in
+                if case APIError.serverError = error {
+                    return Just(Void())
+                        .delay(for: 3, scheduler: DispatchQueue.global())
+                        .flatMap { _ in
+                            return dataTaskPublisher
+                        }
+                        .print("before retry")
+                        .retry(10)
+                        .eraseToAnyPublisher()
+                }
+                throw error
+            }
             .map(\.data)
-            .decode(type: UserNameAvailableMessage.self, decoder: JSONDecoder())
+            .tryMap { data -> UserNameAvailableMessage in
+                let decoder = JSONDecoder()
+                do {
+                    return try decoder.decode(UserNameAvailableMessage.self, from: data)
+                } catch {
+                    throw APIError.decodingError(error)
+                }
+            }
             .map(\.isAvailable)
             .eraseToAnyPublisher()
     }
 }
-
-

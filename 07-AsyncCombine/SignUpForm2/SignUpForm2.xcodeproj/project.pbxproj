@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B89B6C212C23AAA800059FC4 /* SignUpForm2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B6C202C23AAA800059FC4 /* SignUpForm2App.swift */; };
-		B89B6C232C23AAA800059FC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B6C222C23AAA800059FC4 /* ContentView.swift */; };
-		B89B6C252C23AAAA00059FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89B6C242C23AAAA00059FC4 /* Assets.xcassets */; };
-		B89B6C282C23AAAA00059FC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89B6C272C23AAAA00059FC4 /* Preview Assets.xcassets */; };
-		B89B6C2F2C23AB0400059FC4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B6C2E2C23AB0400059FC4 /* SignUpViewModel.swift */; };
-		B89B6C312C23AB1400059FC4 /* AuthenticationSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B6C302C23AB1400059FC4 /* AuthenticationSerivce.swift */; };
-		B89B6C332C23AB5200059FC4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B6C322C23AB5200059FC4 /* Helper.swift */; };
+		377923722C23AAA500C331EA /* SignUpForm2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377923712C23AAA500C331EA /* SignUpForm2App.swift */; };
+		377923742C23AAA500C331EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377923732C23AAA500C331EA /* ContentView.swift */; };
+		377923762C23AAA700C331EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377923752C23AAA700C331EA /* Assets.xcassets */; };
+		377923792C23AAA700C331EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377923782C23AAA700C331EA /* Preview Assets.xcassets */; };
+		377923802C23AAE300C331EA /* SignUpFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779237F2C23AAE300C331EA /* SignUpFormViewModel.swift */; };
+		377923822C23AAF200C331EA /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377923812C23AAF200C331EA /* AuthenticationService.swift */; };
+		377923842C23AB4F00C331EA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377923832C23AB4F00C331EA /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B89B6C1D2C23AAA800059FC4 /* SignUpForm2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpForm2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B89B6C202C23AAA800059FC4 /* SignUpForm2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpForm2App.swift; sourceTree = "<group>"; };
-		B89B6C222C23AAA800059FC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B89B6C242C23AAAA00059FC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B89B6C272C23AAAA00059FC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B89B6C2E2C23AB0400059FC4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		B89B6C302C23AB1400059FC4 /* AuthenticationSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSerivce.swift; sourceTree = "<group>"; };
-		B89B6C322C23AB5200059FC4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		3779236E2C23AAA500C331EA /* SignUpForm2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpForm2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		377923712C23AAA500C331EA /* SignUpForm2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpForm2App.swift; sourceTree = "<group>"; };
+		377923732C23AAA500C331EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		377923752C23AAA700C331EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		377923782C23AAA700C331EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3779237F2C23AAE300C331EA /* SignUpFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormViewModel.swift; sourceTree = "<group>"; };
+		377923812C23AAF200C331EA /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		377923832C23AB4F00C331EA /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B89B6C1A2C23AAA800059FC4 /* Frameworks */ = {
+		3779236B2C23AAA500C331EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +38,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B89B6C142C23AAA800059FC4 = {
+		377923652C23AAA500C331EA = {
 			isa = PBXGroup;
 			children = (
-				B89B6C1F2C23AAA800059FC4 /* SignUpForm2 */,
-				B89B6C1E2C23AAA800059FC4 /* Products */,
+				377923702C23AAA500C331EA /* SignUpForm2 */,
+				3779236F2C23AAA500C331EA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B89B6C1E2C23AAA800059FC4 /* Products */ = {
+		3779236F2C23AAA500C331EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B89B6C1D2C23AAA800059FC4 /* SignUpForm2.app */,
+				3779236E2C23AAA500C331EA /* SignUpForm2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B89B6C1F2C23AAA800059FC4 /* SignUpForm2 */ = {
+		377923702C23AAA500C331EA /* SignUpForm2 */ = {
 			isa = PBXGroup;
 			children = (
-				B89B6C202C23AAA800059FC4 /* SignUpForm2App.swift */,
-				B89B6C222C23AAA800059FC4 /* ContentView.swift */,
-				B89B6C2E2C23AB0400059FC4 /* SignUpViewModel.swift */,
-				B89B6C302C23AB1400059FC4 /* AuthenticationSerivce.swift */,
-				B89B6C322C23AB5200059FC4 /* Helper.swift */,
-				B89B6C242C23AAAA00059FC4 /* Assets.xcassets */,
-				B89B6C262C23AAAA00059FC4 /* Preview Content */,
+				377923712C23AAA500C331EA /* SignUpForm2App.swift */,
+				377923732C23AAA500C331EA /* ContentView.swift */,
+				3779237F2C23AAE300C331EA /* SignUpFormViewModel.swift */,
+				377923812C23AAF200C331EA /* AuthenticationService.swift */,
+				377923832C23AB4F00C331EA /* Helper.swift */,
+				377923752C23AAA700C331EA /* Assets.xcassets */,
+				377923772C23AAA700C331EA /* Preview Content */,
 			);
 			path = SignUpForm2;
 			sourceTree = "<group>";
 		};
-		B89B6C262C23AAAA00059FC4 /* Preview Content */ = {
+		377923772C23AAA700C331EA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B89B6C272C23AAAA00059FC4 /* Preview Assets.xcassets */,
+				377923782C23AAA700C331EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,13 +79,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B89B6C1C2C23AAA800059FC4 /* SignUpForm2 */ = {
+		3779236D2C23AAA500C331EA /* SignUpForm2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B89B6C2B2C23AAAA00059FC4 /* Build configuration list for PBXNativeTarget "SignUpForm2" */;
+			buildConfigurationList = 3779237C2C23AAA700C331EA /* Build configuration list for PBXNativeTarget "SignUpForm2" */;
 			buildPhases = (
-				B89B6C192C23AAA800059FC4 /* Sources */,
-				B89B6C1A2C23AAA800059FC4 /* Frameworks */,
-				B89B6C1B2C23AAA800059FC4 /* Resources */,
+				3779236A2C23AAA500C331EA /* Sources */,
+				3779236B2C23AAA500C331EA /* Frameworks */,
+				3779236C2C23AAA500C331EA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -93,25 +93,25 @@
 			);
 			name = SignUpForm2;
 			productName = SignUpForm2;
-			productReference = B89B6C1D2C23AAA800059FC4 /* SignUpForm2.app */;
+			productReference = 3779236E2C23AAA500C331EA /* SignUpForm2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B89B6C152C23AAA800059FC4 /* Project object */ = {
+		377923662C23AAA500C331EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					B89B6C1C2C23AAA800059FC4 = {
+					3779236D2C23AAA500C331EA = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = B89B6C182C23AAA800059FC4 /* Build configuration list for PBXProject "SignUpForm2" */;
+			buildConfigurationList = 377923692C23AAA500C331EA /* Build configuration list for PBXProject "SignUpForm2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,45 +119,45 @@
 				en,
 				Base,
 			);
-			mainGroup = B89B6C142C23AAA800059FC4;
-			productRefGroup = B89B6C1E2C23AAA800059FC4 /* Products */;
+			mainGroup = 377923652C23AAA500C331EA;
+			productRefGroup = 3779236F2C23AAA500C331EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B89B6C1C2C23AAA800059FC4 /* SignUpForm2 */,
+				3779236D2C23AAA500C331EA /* SignUpForm2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B89B6C1B2C23AAA800059FC4 /* Resources */ = {
+		3779236C2C23AAA500C331EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89B6C282C23AAAA00059FC4 /* Preview Assets.xcassets in Resources */,
-				B89B6C252C23AAAA00059FC4 /* Assets.xcassets in Resources */,
+				377923792C23AAA700C331EA /* Preview Assets.xcassets in Resources */,
+				377923762C23AAA700C331EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B89B6C192C23AAA800059FC4 /* Sources */ = {
+		3779236A2C23AAA500C331EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89B6C232C23AAA800059FC4 /* ContentView.swift in Sources */,
-				B89B6C2F2C23AB0400059FC4 /* SignUpViewModel.swift in Sources */,
-				B89B6C332C23AB5200059FC4 /* Helper.swift in Sources */,
-				B89B6C212C23AAA800059FC4 /* SignUpForm2App.swift in Sources */,
-				B89B6C312C23AB1400059FC4 /* AuthenticationSerivce.swift in Sources */,
+				377923742C23AAA500C331EA /* ContentView.swift in Sources */,
+				377923722C23AAA500C331EA /* SignUpForm2App.swift in Sources */,
+				377923842C23AB4F00C331EA /* Helper.swift in Sources */,
+				377923802C23AAE300C331EA /* SignUpFormViewModel.swift in Sources */,
+				377923822C23AAF200C331EA /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B89B6C292C23AAAA00059FC4 /* Debug */ = {
+		3779237A2C23AAA700C331EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +220,7 @@
 			};
 			name = Debug;
 		};
-		B89B6C2A2C23AAAA00059FC4 /* Release */ = {
+		3779237B2C23AAA700C331EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,7 +276,7 @@
 			};
 			name = Release;
 		};
-		B89B6C2C2C23AAAA00059FC4 /* Debug */ = {
+		3779237D2C23AAA700C331EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -284,7 +284,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SignUpForm2/Preview Content\"";
-				DEVELOPMENT_TEAM = KM8D8UY7M5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -297,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yehjinjang.SignUpForm2;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.SignUpForm2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -305,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		B89B6C2D2C23AAAA00059FC4 /* Release */ = {
+		3779237E2C23AAA700C331EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -313,7 +312,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SignUpForm2/Preview Content\"";
-				DEVELOPMENT_TEAM = KM8D8UY7M5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -326,7 +324,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yehjinjang.SignUpForm2;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.SignUpForm2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,25 +335,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B89B6C182C23AAA800059FC4 /* Build configuration list for PBXProject "SignUpForm2" */ = {
+		377923692C23AAA500C331EA /* Build configuration list for PBXProject "SignUpForm2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B89B6C292C23AAAA00059FC4 /* Debug */,
-				B89B6C2A2C23AAAA00059FC4 /* Release */,
+				3779237A2C23AAA700C331EA /* Debug */,
+				3779237B2C23AAA700C331EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B89B6C2B2C23AAAA00059FC4 /* Build configuration list for PBXNativeTarget "SignUpForm2" */ = {
+		3779237C2C23AAA700C331EA /* Build configuration list for PBXNativeTarget "SignUpForm2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B89B6C2C2C23AAAA00059FC4 /* Debug */,
-				B89B6C2D2C23AAAA00059FC4 /* Release */,
+				3779237D2C23AAA700C331EA /* Debug */,
+				3779237E2C23AAA700C331EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B89B6C152C23AAA800059FC4 /* Project object */;
+	rootObject = 377923662C23AAA500C331EA /* Project object */;
 }

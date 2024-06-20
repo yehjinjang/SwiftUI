@@ -1,8 +1,8 @@
 //
-//  SignUpViewModel.swift
+//  SignUpFormViewModel.swift
 //  SignUpForm2
 //
-//  Created by 장예진 on 6/20/24.
+//  Created by Jungman Bae on 6/20/24.
 //
 
 import Foundation
@@ -14,7 +14,7 @@ class SignUpFormViewModel: ObservableObject {
     @Published var username: String = ""
     @Published var usernameMessage: String = ""
     @Published var isValid: Bool = false
-    @Published var showUpdateDialog: Bool = true
+    @Published var showUpdateDialog: Bool = false
     
     private var authenticationService = AuthenticationService()
     
