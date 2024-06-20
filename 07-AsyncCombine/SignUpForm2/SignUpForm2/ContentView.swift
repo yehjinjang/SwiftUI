@@ -12,17 +12,15 @@ struct ContentView: View {
     
     var body: some View {
         Form {
-            // username insert
             Section {
                 TextField("Username", text: $viewModel.username)
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()
-                
             } footer: {
                 Text(viewModel.usernameMessage)
                     .foregroundStyle(Color.red)
             }
-            // submit button
+            
             Section {
                 Button("Sign up") {
                     print("Signing up as \(viewModel.username)")
@@ -31,18 +29,18 @@ struct ContentView: View {
             }
         }
         .alert("Please update", isPresented: $viewModel.showUpdateDialog, actions: {
-            Button("Upgrade"){
+            Button("Upgrade") {
                 
             }
-            Button("Not now", role: .cancel){}
-        }, message : {
+            Button("Not now", role: .cancel) {}
+        }, message: {
             Text("It looks like you're using an older version of this app. Please update your app.")
         })
     }
 }
 
 #Preview {
-    NavigationStack{
+    NavigationStack {
         ContentView()
     }
 }

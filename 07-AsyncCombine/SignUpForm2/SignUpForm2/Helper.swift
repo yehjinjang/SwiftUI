@@ -10,7 +10,7 @@ import Combine
 
 // decode 하기 위해 쓰기 때문에 Codable 사용
 struct UserNameAvailableMessage : Codable {
-    var isVailable : Bool
+    var isAvailable : Bool
     var userName : String
     
 }
