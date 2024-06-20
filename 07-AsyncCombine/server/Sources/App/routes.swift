@@ -125,7 +125,7 @@ func routes(_ app: Application) throws {
 
     // simulate decoding error by sending a response that has fewer fields than the client expects
     if userName == "illegalresponse" {
-        return UserAvailable(isAvailable: false, userName: userName)
+      return UserAvailable(isAvailable: false)
     }
     
     // check if username is available and return result
