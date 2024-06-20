@@ -14,7 +14,7 @@ class SignUpFormViewModel: ObservableObject {
     @Published var username: String = ""
     @Published var usernameMessage: String = ""
     @Published var isValid: Bool = false
-    @Published var showUpdateDialog: Bool = false
+    @Published var showUpdateDialog: Bool = true
     
     private var authenticationService = AuthenticationService()
     
@@ -43,5 +43,15 @@ class SignUpFormViewModel: ObservableObject {
             }
         }
         .assign(to: &$isValid)
+        
+        isUsernameAvailablePublisher.map { result in
+            switch result {
+            case .success(let isAvailable):
+                return isAvailable ? "" : "This username is not available."
+            case .failure(let error):
+                return error.localizedDescription
+            }
+        }
+        .assign(to: &$usernameMessage)
     }
 }
