@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextInputApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs2-yl-U5d">
+                                <rect key="frame" x="162" y="214" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YVI-g2-tJF">
+                                <rect key="frame" x="135" y="251" width="96" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhR-jN-Cf6">
+                                <rect key="frame" x="135" y="293" width="96" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q27-W6-At9">
+                                <rect key="frame" x="76" y="335" width="241" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Say-M5-EqL">
+                                <rect key="frame" x="157" y="471" width="74" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="didTapSubmitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9l-QC-Me9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vs2-yl-U5d" secondAttribute="trailing" constant="189" id="2Ls-qJ-7qf"/>
+                            <constraint firstItem="hhR-jN-Cf6" firstAttribute="top" secondItem="YVI-g2-tJF" secondAttribute="bottom" constant="8" id="823-CI-ASg"/>
+                            <constraint firstItem="YVI-g2-tJF" firstAttribute="top" secondItem="Vs2-yl-U5d" secondAttribute="bottom" constant="16" id="8AG-Ku-MeU"/>
+                            <constraint firstItem="YVI-g2-tJF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="8TK-gP-EFf"/>
+                            <constraint firstItem="Q27-W6-At9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="TFU-N2-Tfd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Say-M5-EqL" secondAttribute="bottom" constant="312" id="Y9m-oy-R2I"/>
+                            <constraint firstItem="YVI-g2-tJF" firstAttribute="trailing" secondItem="hhR-jN-Cf6" secondAttribute="trailing" id="d23-qr-PPu"/>
+                            <constraint firstItem="Say-M5-EqL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="f2s-te-3ej"/>
+                            <constraint firstItem="YVI-g2-tJF" firstAttribute="leading" secondItem="hhR-jN-Cf6" secondAttribute="leading" id="fKh-v1-Wa3"/>
+                            <constraint firstItem="Say-M5-EqL" firstAttribute="top" secondItem="Q27-W6-At9" secondAttribute="bottom" constant="8" id="fo0-EN-DNm"/>
+                            <constraint firstItem="Q27-W6-At9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ldz-pl-JWD"/>
+                            <constraint firstItem="hhR-jN-Cf6" firstAttribute="trailing" secondItem="Say-M5-EqL" secondAttribute="trailing" id="nRd-5m-dml"/>
+                            <constraint firstItem="Vs2-yl-U5d" firstAttribute="centerX" secondItem="YVI-g2-tJF" secondAttribute="centerX" id="nq0-7A-gFp"/>
+                            <constraint firstItem="Vs2-yl-U5d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="smG-5q-XYa"/>
+                            <constraint firstItem="Q27-W6-At9" firstAttribute="top" secondItem="hhR-jN-Cf6" secondAttribute="bottom" constant="8" id="yLJ-kk-jX6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="Vs2-yl-U5d" id="laC-gq-SmX"/>
+                        <outlet property="secureTextField" destination="hhR-jN-Cf6" id="lGk-If-Blc"/>
+                        <outlet property="textField" destination="YVI-g2-tJF" id="9Ec-UZ-6e9"/>
+                        <outlet property="textView" destination="Q27-W6-At9" id="NCg-jz-WLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,3 @@
+"greeting-label %@" = "Hola, %@";
+"button-label" = "Tocame";
+"placeholder-label" = "Escriba aquí";
